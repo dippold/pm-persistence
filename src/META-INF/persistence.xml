@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="PmPersistencePU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>org.ftd.educational.pm.persistence.entities.User</class>
+    <class>org.ftd.educational.pm.persistence.entities.Rule</class>
+    <class>org.ftd.educational.pm.persistence.entities.MenuItem</class>
+    <class>org.ftd.educational.pm.persistence.entities.UserNotification</class>
+    <class>org.ftd.educational.pm.persistence.entities.Project</class>
+    <class>org.ftd.educational.pm.persistence.entities.MasterData</class>
+    <class>org.ftd.educational.pm.persistence.entities.Activity</class>
+    <class>org.ftd.educational.pm.persistence.entities.WorkPackage</class>
+    <class>org.ftd.educational.pm.persistence.entities.WorkPackageStatus</class>
+    <class>org.ftd.educational.pm.persistence.entities.ActivityStatus</class>
+    <class>org.ftd.educational.pm.persistence.entities.ProjectStatus</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/pm?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="lazaro"/>
+    </properties>
+  </persistence-unit>
+</persistence>
