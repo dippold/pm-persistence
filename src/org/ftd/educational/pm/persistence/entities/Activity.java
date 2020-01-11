@@ -11,7 +11,7 @@ import javax.persistence.Id;
 /**
  *
  * @author Fabio Tavares Dippold
- * @version 1.0.0 - 11/02/16
+ * @version 1.0.0 - 12/02/16
  * 
  */
 @Entity
